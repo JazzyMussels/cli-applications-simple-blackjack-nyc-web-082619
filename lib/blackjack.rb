@@ -30,7 +30,7 @@ end
 
 def hit?(current_card_total)
   prompt_user
-  case get_user_input when "s" then break when "h" then card = deal_card else invalid_command; prompt_user end 
+  case get_user_input when "s" then return when "h" then card = deal_card else invalid_command; prompt_user end 
   current_card_total += card 
 end
 
