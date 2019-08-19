@@ -32,7 +32,7 @@ def hit?(current_card_total)
   prompt_user
   case get_user_input 
   when "s"
-    return 
+    return current_card_total
   when "h" 
     card = deal_card 
     current_card_total += card 
