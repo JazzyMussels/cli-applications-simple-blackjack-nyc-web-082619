@@ -34,7 +34,8 @@ def hit?(current_card_total)
   when "s"
     return 
   when "h" 
-    deal_card += current_card_total
+    card = deal_card 
+    current_card_total += card 
   else 
     invalid_command 
     prompt_user 
