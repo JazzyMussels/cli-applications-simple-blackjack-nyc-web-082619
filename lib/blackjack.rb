@@ -55,7 +55,6 @@ end
 def runner
   welcome
   cards = initial_round
-  hit?(cards) unless cards > 21 
-  end_game(cards)
+  cards > 21 ? end_game(cards) : hit?(cards)  
 end
     
