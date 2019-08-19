@@ -57,7 +57,7 @@ def runner
   cards = initial_round
   hit?(cards)
   display_card_total(cards)
-  hit?(cards) until cards > 21 
+  hit?(cards) while cards <= 21 
 end_game(cards)
     
 end
