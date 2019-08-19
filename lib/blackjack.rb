@@ -54,11 +54,7 @@ end
 
 def runner
   welcome
-  var = display_card_total(hit?(initial_round))
-    if var <= 21
-      hit?(var)
-    else 
-      end_game(var)
-    end
+  initial_round
+  hit?(initial_round)
 end
     
