@@ -30,7 +30,15 @@ end
 
 def hit?(current_card_total)
   prompt_user
-  case get_user_input when "s" then return when "h" then card = (current_card_total + deal_card) else invalid_command; prompt_user end 
+  case get_user_input 
+  when "s"
+    return 
+  when "h" 
+    card = (current_card_total + deal_card) 
+  else 
+    invalid_command 
+    prompt_user 
+  end 
   card 
 end
 
