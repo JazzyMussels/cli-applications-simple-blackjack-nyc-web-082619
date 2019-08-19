@@ -39,7 +39,8 @@ def hit?(current_card_total)
     invalid_command 
     prompt_user 
   end 
-  current_card_total + card 
+  card += current_card_total  
+  card 
 end
 
 def invalid_command
